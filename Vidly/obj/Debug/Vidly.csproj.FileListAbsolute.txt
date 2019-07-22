@@ -238,3 +238,5 @@ C:\Users\Chivi\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs
 C:\Users\Chivi\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\Chivi\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\Chivi\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialCreate.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
