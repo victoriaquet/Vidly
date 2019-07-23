@@ -244,3 +244,8 @@ C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubsc
 C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
 C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
 C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddingNameToMembershipType.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ActualizateMembershipType.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddingBirthdayToCustomer.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.MakingBirthdayNullable.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.try_2.resources

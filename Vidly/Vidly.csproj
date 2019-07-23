@@ -222,6 +222,26 @@
     <Compile Include="Migrations\201907221531121_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201907221531121_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907231410285_AddingNameToMembershipType.cs" />
+    <Compile Include="Migrations\201907231410285_AddingNameToMembershipType.Designer.cs">
+      <DependentUpon>201907231410285_AddingNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907231411549_ActualizateMembershipType.cs" />
+    <Compile Include="Migrations\201907231411549_ActualizateMembershipType.Designer.cs">
+      <DependentUpon>201907231411549_ActualizateMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907231430411_AddingBirthdayToCustomer.cs" />
+    <Compile Include="Migrations\201907231430411_AddingBirthdayToCustomer.Designer.cs">
+      <DependentUpon>201907231430411_AddingBirthdayToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907231436161_MakingBirthdayNullable.cs" />
+    <Compile Include="Migrations\201907231436161_MakingBirthdayNullable.Designer.cs">
+      <DependentUpon>201907231436161_MakingBirthdayNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907231508489_try_2.cs" />
+    <Compile Include="Migrations\201907231508489_try_2.Designer.cs">
+      <DependentUpon>201907231508489_try_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -326,6 +346,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907221531121_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201907221531121_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907231410285_AddingNameToMembershipType.resx">
+      <DependentUpon>201907231410285_AddingNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907231411549_ActualizateMembershipType.resx">
+      <DependentUpon>201907231411549_ActualizateMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907231430411_AddingBirthdayToCustomer.resx">
+      <DependentUpon>201907231430411_AddingBirthdayToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907231436161_MakingBirthdayNullable.resx">
+      <DependentUpon>201907231436161_MakingBirthdayNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907231508489_try_2.resx">
+      <DependentUpon>201907231508489_try_2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

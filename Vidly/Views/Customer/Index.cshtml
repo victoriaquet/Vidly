@@ -16,7 +16,7 @@ else
     <thead>
         <tr>
             <th>Clientes</th>
-            <th>Rango de Descuento</th>
+            <th>Tipo de Membresía</th>
         </tr>
     </thead>
 
@@ -25,7 +25,7 @@ else
         {
             <tr>
                 <td>@Html.ActionLink(cliente.Name, "Details", "Customer", new { id = cliente.Id}, null )</td>
-                <td>@cliente.MembershipType.DiscountRate%</td>
+                <td>@cliente.MembershipType.Name</td>
                 @*Para mapear lo anterior, hay que cargar a los clientes y sus tipos de membresia juntos (eager loading)*@
             </tr>
         }
