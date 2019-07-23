@@ -43,7 +43,7 @@ namespace Vidly.Controllers
         // solicitado por la vista. La vista Details, recibe un modelo de cliente.
             public ActionResult Details(int id)
             {
-                var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+                var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
 
                 if (customer == null)
                     return HttpNotFound();
@@ -56,9 +56,9 @@ namespace Vidly.Controllers
             //{
             //    return new List<Customer>
             //    {
-            //    new Customer { Id = 1, Name = "John Smith" },
-            //    new Customer { Id = 2, Name = "Mary Williams" },
-            //    new Customer {Id = 3, Name = "Sofía Carlota" }
+            //    new Customer { MembershipTypeId = 1, Name = "John Smith" },
+            //    new Customer { MembershipTypeId = 2, Name = "Mary Williams" },
+            //    new Customer {MembershipTypeId = 3, Name = "Sofía Carlota" }
             //    };
             //}
         }

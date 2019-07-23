@@ -10,7 +10,6 @@ namespace Vidly.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Vidly.Models.ApplicationDbContext";
         }
 
         protected override void Seed(Vidly.Models.ApplicationDbContext context)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Vidly.Models
 {
@@ -14,8 +15,10 @@ namespace Vidly.Models
         public string Name { get; set; }
         public DateTime? Birthday { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
-        public MembershipType MembershipType { get; set; }        
+
+        [ForeignKey("MembershipType")]
         public byte MembershipTypeId { get; set; }
+        public MembershipType MembershipType { get; set; }
 
     }
 }

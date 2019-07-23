@@ -238,14 +238,7 @@ C:\Users\Chivi\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs
 C:\Users\Chivi\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\Chivi\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\Chivi\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.pdb
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialCreate.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.initialhugefirst.resources
 C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribedToCustomer.resources
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddingNameToMembershipType.resources
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ActualizateMembershipType.resources
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddingBirthdayToCustomer.resources
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.MakingBirthdayNullable.resources
-C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.try_2.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.populating.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.try2.resources
