@@ -13,7 +13,7 @@ namespace Vidly.Controllers
     public class CustomerController : Controller
     {
         //Lo siguiente se agrega para poder utilizaar la DB, se crea un DbContext
-
+        //Parece que es para poder usar la variable _context como si el contexto fuera un objeto, y de ahi extraer todo lo que necesitemos de la DB
         // ésta es una propiedad es una DbSet pero definida en nuestro DbContext.
         // con _context.Customer podemos obtener todos los clientes en la DB
         private ApplicationDbContext _context;
