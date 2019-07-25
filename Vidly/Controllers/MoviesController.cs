@@ -43,8 +43,12 @@ namespace Vidly.Controllers
         [Route("Movies/Details/{id}")]
         public ActionResult Details(int id)
         {
+
             //Acá dego Where. en vez de SingleOrDefault. para ver que onda
             var pelicula = _context.Movies.Include(c=> c.MovieGenre).SingleOrDefault(c=> c.Id == id);
+
+            if (pelicula == null)
+                return HttpNotFound();
             
             return View(pelicula);
         }
