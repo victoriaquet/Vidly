@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Vidly.View_Models
 {
-    public class NewCustomerViewModel
+    public class CustomerFormViewModel
     {
         
         public IEnumerable<MembershipType> MembershipTypes { get; set; }
