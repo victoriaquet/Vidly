@@ -246,3 +246,4 @@ C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.Actualizat
 C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddiingMovieGenre2.resources
 C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ModifMovieGenreName.resources
 C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulatingMovieGenre.resources
+C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.Miedo2.resources

@@ -230,6 +230,10 @@
     <Compile Include="Migrations\201907241505558_PopulatingMovieGenre.Designer.cs">
       <DependentUpon>201907241505558_PopulatingMovieGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907312033419_´Miedo2´.cs" />
+    <Compile Include="Migrations\201907312033419_´Miedo2´.Designer.cs">
+      <DependentUpon>201907312033419_´Miedo2´.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -241,6 +245,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="View_Models\CustomerFormViewModel.cs" />
+    <Compile Include="View_Models\MovieFormViewModel.cs" />
     <Compile Include="View_Models\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -310,6 +315,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customer\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -344,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907241505558_PopulatingMovieGenre.resx">
       <DependentUpon>201907241505558_PopulatingMovieGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907312033419_´Miedo2´.resx">
+      <DependentUpon>201907312033419_´Miedo2´.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

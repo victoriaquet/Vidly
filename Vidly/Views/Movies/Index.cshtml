@@ -6,6 +6,12 @@
 
 <h2>Disfrutá de las siguientes películas:</h2>
 
+<div>
+<button type="button" class="btn btn-secondary my-2 my-sm-0"  > 
+    @Html.ActionLink("Nueva Pelicula", "New", "Movies")
+</button>
+</div>
+
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
@@ -19,7 +25,7 @@
         @foreach (var pelicula in Model)
         {
             <tr>
-                <td>@Html.ActionLink(pelicula.Name,"Details","Movies",  new { id = pelicula.Id }, null) </td>
+                <td>@Html.ActionLink(pelicula.Name,"Edit","Movies",  new { id = pelicula.Id }, null) </td>
                 <td>@pelicula.MovieGenre.Name</td>
             </tr>
 

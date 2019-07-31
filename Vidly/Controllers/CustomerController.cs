@@ -71,7 +71,7 @@ namespace Vidly.Controllers
         }
 
         [HttpPost] //esto es para definir que no es un Get
-        public ActionResult Save(Customer customer)//Pimeero usamos NewCustomeerViewModel.. pero dejamos esto gracias al model binding
+        public ActionResult Save(Customer customer)//Primeero usamos NewCustomeerViewModel.. pero dejamos esto gracias al model binding
         {
             if (customer.Id == 0)//Quiere decir que se trata de un nuevo cliente
 
