@@ -17,6 +17,7 @@ namespace Vidly.Models
         public string Name { get; set; }
 
         [Display(Name = "Fecha de nacimiento")]
+        [Min18YearsIfAMember]
         public DateTime? Birthday { get; set; }
 
         public bool IsSubscribedToNewsletter { get; set; }

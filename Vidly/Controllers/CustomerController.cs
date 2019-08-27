@@ -64,7 +64,8 @@ namespace Vidly.Controllers
 
             var viewModel = new CustomerFormViewModel
             {
-                MembershipTypes = membershipTypes
+                MembershipTypes = membershipTypes,
+                Customer = new Customer()              
 
             };
             return View("CustomerForm",viewModel);//Acá, antes la vista no se llamaba CustomerForm, se llamaba New, como la acción, entonces no había que mapear, solo pasar el vlaor del atributo, ahora hay que pasar el nombre de la vista
@@ -73,32 +74,47 @@ namespace Vidly.Controllers
         [HttpPost] //esto es para definir que no es un Get
         public ActionResult Save(Customer customer)//Primeero usamos NewCustomeerViewModel.. pero dejamos esto gracias al model binding
         {
-            if (customer.Id == 0)//Quiere decir que se trata de un nuevo cliente
+            if(!ModelState.IsValid)
+            {
+                var viewModel = new CustomerFormViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes= _context.MembershipTypes.ToList()
+                };
+
+                return View("CustomerForm", viewModel);
+                    
+            };
+            
+
+           
+
+                if (customer.Id == 0)//Quiere decir que se trata de un nuevo cliente
 
                 // Agrego el cliente al DbContext
                 _context.Customers.Add(customer);// solo en memoria, no en DB
 
-            else
-            {
-                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+                else
+                {
+                         var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
 
                 // TryUpdateModel(customerInDb); esta linea es lo que te recomienda microsoft para hacer update con el formulario, pero tiene huecos de seguridad, pueden medianamente resolversse con parametros que traenotros problemas
                 //Mapper.Map.(customer, customerInDb)
 
-                customerInDb.Name = customer.Name;
-                customerInDb.Birthday = customer.Birthday;
-                customerInDb.MembershipTypeId = customer.MembershipTypeId;
-                customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+                        customerInDb.Name = customer.Name;
+                        customerInDb.Birthday = customer.Birthday;
+                        customerInDb.MembershipTypeId = customer.MembershipTypeId;
+                        customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
 
-            }
-
-
+                 }
 
 
 
-            _context.SaveChanges(); //Con esto se genera la persistencia de los cambios, todes los cambios juntos, o ninguno
 
-            return RedirectToAction("Index", "Customer");//Redirecciono a /Customer/Index
+
+                  _context.SaveChanges(); //Con esto se genera la persistencia de los cambios, todes los cambios juntos, o ninguno
+
+                    return RedirectToAction("Index", "Customer");//Redirecciono a /Customer/Index
 
             //F9 to  breakpiont + F5 to execute debugger
         }
