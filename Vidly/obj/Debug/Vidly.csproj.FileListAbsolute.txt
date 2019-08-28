@@ -247,3 +247,10 @@ C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddiingMov
 C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ModifMovieGenreName.resources
 C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulatingMovieGenre.resources
 C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.Miedo2.resources
+C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.miercoles.resources

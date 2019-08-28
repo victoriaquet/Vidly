@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.View_Models;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 
 namespace Vidly.Controllers
 
@@ -64,14 +65,29 @@ namespace Vidly.Controllers
             return View("MovieForm", viewModel);
         }
 
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid) //Valido que lo ingresado esté en el formato requerido, sino recargo y muestro errores
+            {
+                var viewModel = new MovieFormViewModel(movie)
+                {
+                   
+                    MovieGenres = _context.MovieGenres.ToList()
+                };
+
+                return View("MovieForm", viewModel);
+
+            };
+
             if (movie.Id == 0)
                 _context.Movies.Add(movie);
             else
             {
                 var movieInDb = _context.Movies.Single(c => c.Id == movie.Id);
-             
+
 
                 // TryUpdateModel(customerInDb); esta linea es lo que te recomienda microsoft para hacer update con el formulario, pero tiene huecos de seguridad, pueden medianamente resolversse con parametros que traenotros problemas
                 //Mapper.Map.(customer, customerInDb)
@@ -80,12 +96,19 @@ namespace Vidly.Controllers
                 movieInDb.ReleaseDate = movie.ReleaseDate;
                 movieInDb.MovieGenreId = movie.MovieGenreId;
                 movieInDb.NumberInStock = movie.NumberInStock;
-               
+
 
             }
 
-         
-            _context.SaveChanges();
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                Console.WriteLine(e);
+            }
 
             return RedirectToAction("Index", "Movies");
         }
@@ -98,10 +121,10 @@ namespace Vidly.Controllers
                 return HttpNotFound();
           
             
-                var viewModel = new MovieFormViewModel
+                var viewModel = new MovieFormViewModel(movie)
                 {
-                    MovieGenres = _context.MovieGenres.ToList(),
-                    Movie = movie
+                    MovieGenres = _context.MovieGenres.ToList()               
+
                    
                 };
 

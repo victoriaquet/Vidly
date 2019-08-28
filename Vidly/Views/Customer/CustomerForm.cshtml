@@ -35,26 +35,17 @@
     </div>
 
     @Html.HiddenFor(m => m.Customer.Id)
-
-    //este codigo sacamos de los comentarios para solucionar que  ModelState daba false. @Html.HiddenFor(m => m.Customer.Id)
-    @*if ((Model.Customer == null) || (Model.Customer.Id == 0))
-    {
-        @Html.Hidden("Id", 0);
-    }
-    else
-    {
-        @Html.HiddenFor(c => c.Customer.Id)
-    }*@
+    @Html.AntiForgeryToken()
 
 
     <button type="submit" class="btn btn-primary">Guardar cambios</button>
 }
 
 @*@section scripts
-    
-{
-    @Scripts.Render("~/bundles/jqueryval")
 
-}*@
+    {
+        @Scripts.Render("~/bundles/jqueryval")
+
+    }//Habilito para client side validation*@
 
 

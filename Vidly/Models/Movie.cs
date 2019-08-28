@@ -25,6 +25,7 @@ namespace Vidly.Models
 
 
         [Required]
+        [Min0Max20MoviesIn]        
         [Display(Name = "Número en Stock")]
         public int NumberInStock { get; set; }
 

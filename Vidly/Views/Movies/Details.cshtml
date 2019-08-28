@@ -8,8 +8,8 @@
 
 <ul>
     <li>Género: @Model.MovieGenre.Name</li>
-    <li>Fecha de Lanzamiento: @Model.ReleaseDate.ToShortDateString()</li>
-    <li>Fecha de Compra: @Model.DateAdded.ToShortDateString()</li>
+    <li>Fecha de Lanzamiento: @Model.ReleaseDate.ToLongDateString()</li>
+    <li>Fecha de Compra: @Model.DateAdded.ToLongDateString()</li>
     <li>Cantidad disponible: @Model.NumberInStock</li>
 </ul>
 

@@ -71,6 +71,7 @@ namespace Vidly.Controllers
             return View("CustomerForm",viewModel);//Acá, antes la vista no se llamaba CustomerForm, se llamaba New, como la acción, entonces no había que mapear, solo pasar el vlaor del atributo, ahora hay que pasar el nombre de la vista
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost] //esto es para definir que no es un Get
         public ActionResult Save(Customer customer)//Primeero usamos NewCustomeerViewModel.. pero dejamos esto gracias al model binding
         {
