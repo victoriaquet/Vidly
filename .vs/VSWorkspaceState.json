@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Vidly",
+    "\\Vidly\\Views",
+    "\\Vidly\\Views\\Customer"
   ],
-  "SelectedNode": "\\Vidly.sln",
+  "SelectedNode": "\\Vidly\\Views\\Customer\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

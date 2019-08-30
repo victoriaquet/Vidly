@@ -254,3 +254,5 @@ C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
 C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Web.Http.xml
 C:\Users\Victoria\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
 C:\Users\Victoria\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.miercoles.resources
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\bin\AutoMapper.dll
+C:\Users\Victoria\Source\Repos\Vidly\Vidly\bin\AutoMapper.xml
