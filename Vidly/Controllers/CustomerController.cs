@@ -40,9 +40,8 @@ namespace Vidly.Controllers
         //parámetros, en este caso se le pasa una lista de customers. La vista Index, recibe una lista de clientes. 
         public ViewResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
-            return View(customers);
+            return View();
         }
 
         //Details, es un método que recibe un id de parámentro. Llama a GetCustomers (ahora consulta el contexto) para obtener la lista de todos 

@@ -6,12 +6,7 @@
 
 <h2>Lista de Todos los Clientes</h2>
 
-@if (!Model.Any())
-{
-    <p>Aún no se cargó algún cliente</p>
-}
-else
-{
+
 <table id="customers" class="table table-bordered table-hover">
     <thead>
         <tr>
@@ -21,29 +16,39 @@ else
         </tr>
     </thead>
 
-    <tbody>
-        @foreach (var cliente in Model)
-        {
-            <tr>
-                <td>@Html.ActionLink(cliente.Name, "Edit", "Customer", new { id = cliente.Id}, null )</td>
-                <td>@cliente.MembershipType.Name</td>
-                <td>
-                    <button data-customer-id="@cliente.Id" class="btn-link js-delete">Delete</button>
-                </td>
-                @*Para mapear lo anterior, hay que cargar a los clientes y sus tipos de membresia juntos (eager loading)*@
-            </tr>
-        }
+    <tbody>    
     </tbody>
 </table>
- }
-
+ 
 @section scripts
 {
     <script>
 
         $(document).ready(function () {
 
-            $("#customers").DataTable();
+            $("#customers").DataTable({
+                ajax: {
+                    url: "/api/customers",
+                    dataSrc:""
+                },
+                columns: [
+                    {
+                        data: "name",
+                        render: function (data, type, customer) {
+                            return "<a href='/customer/edit/" + customer.id + "'>" + customer.name + "</a>";
+                        }
+                    },
+                    {
+                        data: "name"
+                    },
+                    {
+                        data: "id",
+                        render: function (data) {
+                            return "<button class='btn-link js-delete' data-customer-id=" + data + ">Delete</button>"
+                        }
+                    }
+                ]
+            });
 
             $("#customers").on("click",".js-delete", function () {
 
