@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\Vidly",
+    "\\Vidly\\App_Start",
+    "\\Vidly\\Controllers",
+    "\\Vidly\\Controllers\\Api",
+    "\\Vidly\\Dtos",
+    "\\Vidly\\Models",
     "\\Vidly\\Views",
-    "\\Vidly\\Views\\Customer"
+    "\\Vidly\\Views\\Customer",
+    "\\Vidly\\Views\\Movies"
   ],
   "SelectedNode": "\\Vidly.sln",
   "PreviewInSolutionExplorer": false

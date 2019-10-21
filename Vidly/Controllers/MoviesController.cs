@@ -34,11 +34,11 @@ namespace Vidly.Controllers
         public ActionResult Index(string sortBy)
         {
 
-            if (String.IsNullOrWhiteSpace(sortBy))
-                sortBy = "Name";
-            var peliculas = _context.Movies.Include(c => c.MovieGenre).ToList();
+            //if (String.IsNullOrWhiteSpace(sortBy))
+            //    sortBy = "Name";
+            //var peliculas = _context.Movies.Include(c => c.MovieGenre).ToList();
 
-            return View(peliculas);
+            return View(/*peliculas*/);
         }
 
         [Route("Movies/Details/{id}")]
