@@ -38,6 +38,7 @@ namespace Vidly.Controllers
 
         //Estos métodos tienen como resultado la vista del mismo nombre que el controlador, a la cual se l pasan los 
         //parámetros, en este caso se le pasa una lista de customers. La vista Index, recibe una lista de clientes. 
+       
         public ViewResult Index()
         {
 

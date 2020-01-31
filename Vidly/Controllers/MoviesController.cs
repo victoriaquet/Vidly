@@ -31,16 +31,22 @@ namespace Vidly.Controllers
 
 
         //Controlador de la vista Index de Movies -> Movies/Index
-        public ActionResult Index(string sortBy)
+        public ActionResult Index()
         {
 
             //if (String.IsNullOrWhiteSpace(sortBy))
             //    sortBy = "Name";
             //var peliculas = _context.Movies.Include(c => c.MovieGenre).ToList();
 
-            return View(/*peliculas*/);
+            if (User.IsInRole(RoleName.CanManageMovies))
+                return View("List");       
+
+
+            return View("ReadOnlyList"/*peliculas*/);
         }
 
+
+        [Authorize(Roles= RoleName.CanManageMovies)]
         [Route("Movies/Details/{id}")]
         public ActionResult Details(int id)
         {
@@ -54,6 +60,7 @@ namespace Vidly.Controllers
             return View(pelicula);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var movieGenres = _context.MovieGenres.ToList();
@@ -66,6 +73,7 @@ namespace Vidly.Controllers
         }
 
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult Save(Movie movie)
@@ -113,6 +121,7 @@ namespace Vidly.Controllers
             return RedirectToAction("Index", "Movies");
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var movie = _context.Movies.Single(m => m.Id == id);
@@ -132,7 +141,7 @@ namespace Vidly.Controllers
         }
 
 
-
+        [Authorize(Roles = RoleName.CanManageMovies)]
         // GET: Movies/Random
         public ActionResult Random()
         {
